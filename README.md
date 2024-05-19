@@ -36,6 +36,44 @@ The output of each prompt technique shows that Zero shot-Gemini (49 legitimate a
   <img src="https://github.com/hossiq/image/blob/main/Data Count By LLM.png?raw=true" alt="Feature Importance Plot" />
 </p>
 
+The count of how many is detected in each classification is not alone a suitable metric to conclude which technique is better.
+
+Following results show that ZeroShot-ChatGPT3.5 outperforming all other methods, achieving the highest accuracy and F1 score at 96%, indicating exceptional overall effectiveness in detecting phishing URLs. One Shot and Zero Shot-ChatGPT4 resulted in the lowest precision across all LLMs, indicating a tendency to misclassify some legitimate URLs as phishing.
+
+<p align="center">
+  <img src="https://github.com/hossiq/image/blob/main/Eval_Metrics_PromptEngineering_LLMS.PNG?raw=true" alt="Feature Importance Plot" />
+</p>
+
+Similar performance is shown in the following radar plot that ChatGPT3.5-based methods tend to form larger areas within the chart, indicating their overall stronger performance in URL classification tasks when compared to the methods based on other LLMs.
+
+<p align="center">
+  <img src="https://github.com/hossiq/image/blob/main/Radar Plot Metrics.png?raw=true" alt="Feature Importance Plot" />
+</p>
+
+The performance for prompt techniques across all LLM’s outlined that Chain of Thought(CoT) is the best to detect URL’s classification with 86% accuracy and 87% F1 score followed by One shot technique with 86% F1 score.
+
+<p align="center">
+  <img src="https://github.com/hossiq/image/blob/main/Eval_Metrics_PromptEngineeringS.PNG?raw=true" alt="Feature Importance Plot" />
+</p>
+
+The lowest precision is shown in Few shot prompting (77%) suggesting it might misclassify some legitimate URLs as phishing while CoT and Zero shot method provided highest precision of 81%. Role-playing and One-Shot prompting achieved a balance between accuracy and
+precision, both scoring around 84% and 80% respectively. The lowest recall by Zero shot signifies that it might potentially missing some phishing attempts.
+
+Following table shows the performance of various Large Language Models (LLMs) in detecting phishing URLs using different prompt methods and ChatGPT3.5 has the best ability to classify URL’s with the score of 90% and 91% for accuracy and F1, respectively. Also, ChatGPT3.5 shows near perfect recall performance with 98% score shows the confidence to not to misclassify phishing URLs, effectively identifies both phishing and legitimate URLs.
+
+<p align="center">
+  <img src="https://github.com/hossiq/image/blob/main/LLMS performance.PNG?raw=true" alt="Feature Importance Plot" />
+</p>
+
+While both ChatGPT4 and Gemini achieved similar accuracy (81%), their precision falls short (75% and 78% respectively), suggesting they might misclassify some legitimate URLs as phishing attempts compared to ChatGPT 3.5 (86% precision). Gemini has the lowest recall
+(86%) among other models, potentially missing a higher proportion of phishing URLs from the dataset.
+
+The aggregated results for all prompts and models highlight the average accuracy for detecting phishing URLs 84%, demonstrating a good overall ability to identify phishing attempts. However, the average precision of 80% indicates some models might misclassify legitimate URLs as phishing.
+
+<p align="center">
+  <img src="https://github.com/hossiq/image/blob/main/Overall Metrics.PNG?raw=true" alt="Feature Importance Plot" />
+</p>
+
 
 
 
