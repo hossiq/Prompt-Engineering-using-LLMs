@@ -27,3 +27,16 @@ Prompt engineering is applied to the Large Language Models, specifically Gemini,
 The performance evaluation for each prompt in LLMs is crucial to understand model strength of detecting phishing. As the goal of this study is to classify whether URL is phishing or legitimate, the performance metrics that are calculated:
 Accuracy which is the ratio of correctly predicted URL to the total URLs, Precision is the ratio of correctly predicted positive observations which is correctly identified phishing URLs to the total predicted phishing observations, Recall is defined as the ratio of correctly predicted positive observations to all actual positives, referred as sensitivity, and F1 score that provides balanced view of performance as it considers both false positives and false negatives
 
+
+**Results**
+
+The output of each prompt technique shows that Zero shot-Gemini (49 legitimate and 51 phishing) shows similar count as ‘Actual Status’ (50 legitimate and 50 phishing).Other similar count by classification shows by Zero Shot-ChatGPT3.5 (52 legitimate and 48 phishing), and Role Play-Gemini (54 legitimate and 46 phishing) prompt. The major count differences shows by One shot ChatGPT-4 method with 67 legitimate and only 33 phishing followed by Role play and Zero shot ChatGPT-4 with 65 legitimate and 35 phishing.
+
+<p align="center">
+  <img src="https://github.com/hossiq/image/blob/main/Data Count By LLM.png?raw=true" alt="Feature Importance Plot" />
+</p>
+
+
+
+
+
