@@ -22,5 +22,8 @@ Prompt engineering refers to the process of carefully crafting prompts to elicit
 </p>
 
 
+Prompt engineering is applied to the Large Language Models, specifically Gemini, GPT-3.5, and GPT-4, to perform the task of classification. Google’s Gemini a multimodal custom LLM designed for efficiency and built upon the foundation of Google's PaLM 2 model. ChatGPT3.5 is based on OpenAI's proprietary generative pre-trained transformer (GPT) model family, specifically GPT-3.5 and ChatGPT4 is based on the GPT-4 architecture which is a further development of GPT model.
 
+The performance evaluation for each prompt in LLMs is crucial to understand model strength of detecting phishing. As the goal of this study is to classify whether URL is phishing or legitimate, the performance metrics that are calculated:
+Accuracy which is the ratio of correctly predicted URL to the total URLs, Precision is the ratio of correctly predicted positive observations which is correctly identified phishing URLs to the total predicted phishing observations, Recall is defined as the ratio of correctly predicted positive observations to all actual positives, referred as sensitivity, and F1 score that provides balanced view of performance as it considers both false positives and false negatives
 
