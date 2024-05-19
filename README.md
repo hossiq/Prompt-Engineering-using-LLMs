@@ -75,6 +75,16 @@ The aggregated results for all prompts and models highlight the average accuracy
 </p>
 
 
+**Conclusion**
+
+This study explored the potential of prompt engineering to enhance Large Language Model (LLM) based phishing URL detection. The report considered a dataset with 50 ‘phishing’ and 50 ‘legitimate’ URL’s and five different prompt engineering techniques namely Zero-Shot, One-Shot, Few-Shot, Chain of Thoughts (CoT), and Role-Playing utilizing three LLM models ChatGPT 3.5, ChatGPT 4, and Gemini. Zero Shot-ChatGPT3.5 performed the best across all evaluation metrics with top F1 scores of 96% ,while Zero Shot-Gemini had the lowest performance with the lowest F1 Score of 77%. ChatGPT3.5 performed the best across all evaluation metrics with top f1 scores of 91% in all techniques while Gemini shows the lowest performance of 82% f1 score. Chain-of-Thoughts (CoT) method shows best performances combining all LLM’s with 86% accuracy while Few Shot accuracy is the lowest with 81%. The overall performance of various Large Language Models in detecting phishing URLs, averaged across all prompt techniques, demonstrates a solid Accuracy of 84%, Precision of 80%, high Recall of 92%, and an F1 Score of 85%, indicating that these models are effective at identifying legitimate URLs while maintaining a good balance between precision and recall.
 
 
+
+**References**
+
+Lee, P., Bubeck, S. & Petro, J. Benefits, Limits, and Risks of GPT-4 as an AI Chatbot for Medicine. N. Engl. J. Med. 388, 1233–1239 (2023).
+Fouad T; Ali C; Prompt Engineering or Fine-Tuning? A Case Study on Phishing Detection with Large Language Models. Mach. Learn. Knowl. Extr. 2024, 6(1), 367-384; https://doi.org/10.3390/make6010018
+OpenAI. (2023). GPT-4: Scaling Language Models through Prompt Engineering. OpenAI Blog. https://cdn.openai.com/papers/gpt-4.pdf
+Li Wang, Xi Chen, XiangWen Deng, Hao Wen, MingKe You, WeiZhi Liu, Qi Li , Jian Li (2024). Prompt engineering in consistency and reliability with the evidence-
 
